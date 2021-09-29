@@ -31,3 +31,6 @@ body{
     min-height: 100%;
     flex:1.0;
 }
+.margin-full{
+    margin-top: 8rem;
+}
