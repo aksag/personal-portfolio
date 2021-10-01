@@ -97,7 +97,17 @@ body {
 .custom-card-image{
     transform: scale(0.95);
 }
-
+.service-title{
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 1rem;
+  text-align: center;
+}
+.service-image{
+  min-width: 100%;
+  transform: scale(0.5);
+  margin-top: 2em;
+}
 @media (max-width:770px){
 
     .left-container{
@@ -107,6 +117,7 @@ body {
         justify-content: center;
         align-items: flex-start;
     }
+  
     .profile-name {
         font-size: 35px;
         font-weight: 600;
