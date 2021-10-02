@@ -108,14 +108,30 @@ body {
   transform: scale(0.5);
   margin-top: 2em;
 }
+.about-desc{
+  line-height: 200%;
+  text-align: justify;
+}
+.about-name{
+  text-decoration: underline;
+  font-size: 2rem;
+  font-weight: 600;
+}
+@media(max-width:992px){
+  .navbar{
+    background-color: white;
+  }
+  
+}
 @media (max-width:770px){
 
-    .left-container{
+  .left-container{
         padding-top: 6em;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+       
     }
   
     .profile-name {
