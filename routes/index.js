@@ -20,9 +20,9 @@ router.get("/contact", (req, res, next) => {
 router.get("/login", (req, res, next) => {
   res.render("login");
 });
-router.post('/login',(req,res,next)=>{
+router.post("/login", (req, res, next) => {
   let userData = req.body;
   // console.log(userData);
-})
+});
 
 module.exports = router;
