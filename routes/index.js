@@ -1,5 +1,7 @@
 var express = require("express");
 var router = express.Router();
+var dbHelper = require('../helpers/database-operations')
+
 
 router.get("/", function (req, res, next) {
   res.render("index");
@@ -22,6 +24,9 @@ router.get("/login", (req, res, next) => {
 });
 router.post("/login", (req, res, next) => {
   let userData = req.body;
+  dbHelper.createUser(userData,(response)=>{
+    console.log(response);
+  })
   // console.log(userData);
 });
 
