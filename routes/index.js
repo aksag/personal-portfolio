@@ -24,10 +24,7 @@ router.get("/login", (req, res, next) => {
 });
 router.post("/login", (req, res, next) => {
   let userData = req.body;
-  dbHelper.createUser(userData,(response)=>{
-    console.log(response);
-  })
-  // console.log(userData);
+  
 });
 
 module.exports = router;
