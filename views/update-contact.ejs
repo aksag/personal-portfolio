@@ -1,0 +1,30 @@
+<div class="container mt-3">
+    <div class="row margin-full">
+        <div class="col-md-5">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h3>
+                        Modify Contact Details
+                    </h3>
+                    <form action="/user/modify-contact/<%= contact._id %> " method="post">
+                        <div class="form-group mt-3">
+                            <label class="mb-2" for="name">Name</label>
+                            <input type="text" name="name" id="name" class="form-control" value="<%= contact.name %> ">
+                        </div>
+                        <div class="form-group mt-3">
+                            <label class="mb-2" for="email">Email</label>
+                            <input type="email" name="email" id="email" class="form-control" value="<%= contact.email %>">
+                        </div>
+                        <div class="form-group mt-3">
+                            <label class="mb-2" for="phone">Phone</label>
+                            <input type="number" name="phone" id="phone" class="form-control" value="<%= contact.phone %>">
+                        </div>
+                        <div class="form-group mt-3">
+                            <button type="submit" class="btn btn-primary">Save</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

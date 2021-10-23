@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="row margin-full">
+        <h1>Contact Details</h1>
+        <div class="card shadow">
+            <div class="card-body">
+                <div class="table-responsive mt-5">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Sl</th>
+                                <th>Name</th>
+                                <th>Contact Number</th>
+                                <th>Contact Email</th>
+                                <th>Options</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% contacts.forEach((element,index)=> { %>
+                                <tr>
+                                    <td>
+                                        <%= index+1 %>
+                                    </td>
+                                    <td>
+                                        <%= element.name %>
+                                    </td>
+                                    <td>
+                                        <%= element.phone %>
+                                    </td>
+                                    <td>
+                                        <%= element.email %>
+                                    </td>
+                                    <td>
+                                        <a onclick="return confirm('Are you sure to modify')"
+                                            class="btn btn-sm btn-warning text-white rounded-pill"
+                                            href="/user/modify-contact/<%= element._id %> ">Modify</a>
+                                        <a onclick="return confirm('Are you sure to delete')"
+                                            class="btn btn-sm btn-danger text-white rounded-pill"
+                                            href="/user/delete-contact/<%= element._id %> ">Delete</a>
+                                    </td>
+                                </tr>
+                                <% }) %>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
